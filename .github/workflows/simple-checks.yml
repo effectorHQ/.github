@@ -10,7 +10,7 @@ jobs:
     name: Simple checks
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: No .env with secrets committed
         run: |

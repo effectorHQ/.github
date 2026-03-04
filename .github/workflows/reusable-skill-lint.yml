@@ -44,7 +44,7 @@ jobs:
       files-checked: ${{ steps.lint.outputs.files-checked }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Lint SKILL.md
         id: lint
