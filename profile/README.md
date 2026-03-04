@@ -2,7 +2,7 @@
 
 **We build hands for AI that moves first.**
 
-OpenClawHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. It's a better architecture: distributed, plugin-native, community-driven.
+OpenClawHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. Distributed, skill-native, community-driven It's a better architecture.
 
 ---
 
