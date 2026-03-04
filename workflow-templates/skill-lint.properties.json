@@ -1,0 +1,9 @@
+{
+  "name": "Skill Lint",
+  "description": "Validate OpenClaw SKILL.md files. Annotates PRs with inline errors and warnings.",
+  "iconName": "octicon-check-circle",
+  "categories": [
+    "Continuous integration",
+    "OpenClaw"
+  ]
+}

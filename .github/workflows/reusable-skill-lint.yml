@@ -1,0 +1,54 @@
+# Reusable workflow — skill repos can call this with a single line:
+#
+#   jobs:
+#     lint:
+#       uses: OpenClawHQ/.github/.github/workflows/reusable-skill-lint.yml@main
+#
+# This means any skill repo gets maintained CI without copying workflow files.
+
+name: Reusable Skill Lint
+
+on:
+  workflow_call:
+    inputs:
+      path:
+        description: 'Directory or file path to search for SKILL.md files'
+        required: false
+        default: '.'
+        type: string
+      fail-on-warnings:
+        description: 'Exit with code 1 if warnings are found'
+        required: false
+        default: false
+        type: boolean
+    outputs:
+      errors:
+        description: 'Number of validation errors found'
+        value: ${{ jobs.lint.outputs.errors }}
+      warnings:
+        description: 'Number of validation warnings found'
+        value: ${{ jobs.lint.outputs.warnings }}
+      files-checked:
+        description: 'Number of SKILL.md files checked'
+        value: ${{ jobs.lint.outputs.files-checked }}
+
+jobs:
+  lint:
+    name: Validate SKILL.md
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      errors: ${{ steps.lint.outputs.errors }}
+      warnings: ${{ steps.lint.outputs.warnings }}
+      files-checked: ${{ steps.lint.outputs.files-checked }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint SKILL.md
+        id: lint
+        uses: OpenClawHQ/skill-lint-action@v1
+        with:
+          path: ${{ inputs.path }}
+          fail-on-warnings: ${{ inputs.fail-on-warnings }}

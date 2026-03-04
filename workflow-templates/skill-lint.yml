@@ -1,0 +1,29 @@
+# OpenClawHQ — Skill Lint suggested workflow
+# This template appears under Actions → "Suggested workflows" for all repos
+# in the OpenClawHQ organization.
+#
+# It validates SKILL.md files on every push and PR using skill-lint-action.
+
+name: Skill Lint
+
+on:
+  push:
+    branches: [$default-branch]
+    paths:
+      - '**/SKILL.md'
+  pull_request:
+    paths:
+      - '**/SKILL.md'
+
+jobs:
+  lint:
+    name: Validate SKILL.md
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint SKILL.md
+        uses: OpenClawHQ/skill-lint-action@v1
