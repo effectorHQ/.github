@@ -2,7 +2,7 @@
 
 **We build hands for AI that moves first.**
 
-OpenClawHQ is an open community building skills, extensions, and developer tools for [OpenClaw](https://github.com/openclaw/openclaw) — the personal AI assistant you run on your own devices. We exist because one team can't cover every use case. The path forward is distributed: community-driven skills, shared tooling, open knowledge.
+OpenClawHQ is an open community building skills, extensions, and developer tools for [OpenClaw](https://github.com/openclaw/openclaw) — the personal AI assistant you run on your own devices. We exist because one team can't cover every use case. Distributed, skill-native, community-driven is a better architecture.
 
 ---
 
