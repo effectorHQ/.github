@@ -39,7 +39,7 @@ jobs:
 
       - name: Python — install & test
         if: hashFiles('**/pyproject.toml', '**/setup.py', '**/requirements*.txt') != '' && hashFiles('package.json') == ''
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ inputs.python-version }}
 
