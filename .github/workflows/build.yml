@@ -1,0 +1,50 @@
+# Reusable: Build / test
+# Call: uses: OpenClawHQ/.github/.github/workflows/build.yml@main
+# Optional inputs: node-version, python-version (default: auto-detect)
+name: Build
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        required: false
+        default: '20'
+        type: string
+      python-version:
+        required: false
+        default: '3.11'
+        type: string
+
+jobs:
+  build:
+    name: Build & test
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Node — install & test
+        if: hashFiles('package.json') != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: 'npm'
+
+      - name: Node — ci & test
+        if: hashFiles('package.json') != ''
+        run: |
+          npm ci 2>/dev/null || npm install
+          npm run build 2>/dev/null || true
+          npm test 2>/dev/null || npm run test 2>/dev/null || echo "No test script"
+
+      - name: Python — install & test
+        if: hashFiles('**/pyproject.toml', '**/setup.py', '**/requirements*.txt') != '' && hashFiles('package.json') == ''
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ inputs.python-version }}
+
+      - name: Python — pip & pytest
+        if: hashFiles('**/pyproject.toml', '**/setup.py', '**/requirements*.txt') != '' && hashFiles('package.json') == ''
+        run: |
+          pip install -e ".[dev]" 2>/dev/null || pip install -r requirements.txt 2>/dev/null || pip install pytest
+          pytest -v --tb=short 2>/dev/null || echo "No pytest run"

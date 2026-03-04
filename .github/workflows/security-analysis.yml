@@ -1,0 +1,27 @@
+# Reusable: Security Analysis
+# Call from repo: uses: OpenClawHQ/.github/.github/workflows/security-analysis.yml@main
+name: Security Analysis
+
+on:
+  workflow_call:
+
+jobs:
+  security:
+    name: Security
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Node — npm audit
+        if: hashFiles('package.json') != ''
+        run: |
+          npm ci --ignore-scripts 2>/dev/null || npm install --ignore-scripts
+          npm audit --audit-level=high
+        continue-on-error: true
+
+      - name: Python — pip audit (optional)
+        if: hashFiles('**/pyproject.toml', '**/requirements*.txt') != ''
+        run: |
+          pip install pip-audit 2>/dev/null || true
+          pip-audit -r requirements.txt 2>/dev/null || pip-audit 2>/dev/null || echo "pip-audit skipped"
+        continue-on-error: true

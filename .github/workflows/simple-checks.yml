@@ -1,0 +1,33 @@
+# Reusable: Simple checks (no huge files, no .env, basic structure)
+# Call: uses: OpenClawHQ/.github/.github/workflows/simple-checks.yml@main
+name: Simple checks
+
+on:
+  workflow_call:
+
+jobs:
+  simple-checks:
+    name: Simple checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: No .env with secrets committed
+        run: |
+          if test -f .env; then echo "::warning::.env found (ensure no secrets)"; fi
+          for f in .env .env.* 2>/dev/null; do
+            test -f "$f" && grep -qE 'password|secret|key|token' "$f" 2>/dev/null && echo "::error::Possible secret in $f" && exit 1 || true
+          done
+        continue-on-error: true
+
+      - name: YAML syntax (.github)
+        run: |
+          python3 -c "
+          import yaml, pathlib
+          for f in pathlib.Path('.github').rglob('*'):
+            if f.suffix in ('.yml', '.yaml'):
+              try: yaml.safe_load(f.read_text())
+              except Exception as e: raise SystemExit(f'Invalid YAML {f}: {e}')
+          print('YAML OK')
+          "
+        continue-on-error: true

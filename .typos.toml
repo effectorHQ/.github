@@ -1,0 +1,9 @@
+# 可选：各 repo 可放同名文件，忽略项目专有词
+[default]
+extend-ignore-re = [
+  "OpenClaw",
+  "OpenClawHQ",
+  "ClawHub",
+  "SKILL\\.md",
+  "skill-lint",
+]

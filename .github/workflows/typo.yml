@@ -1,0 +1,19 @@
+# Reusable: Typo / spell check (code + markdown)
+# Call: uses: OpenClawHQ/.github/.github/workflows/typo.yml@main
+name: Typo
+
+on:
+  workflow_call:
+
+jobs:
+  typo:
+    name: Typo check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Typos (crate-ci/typos)
+        uses: crate-ci/typos-cli@v1.21.0
+        with:
+          files: .
+        continue-on-error: true
