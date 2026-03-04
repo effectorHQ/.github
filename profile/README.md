@@ -2,15 +2,15 @@
 
 **We build hands for AI that moves first.**
 
-OpenClawHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. Distributed, skill-native, community-driven: it's a better architecture.
+OpenClawHQ is an open community building skills, extensions, and developer tools for [OpenClaw](https://github.com/openclaw/openclaw) — the personal AI assistant you run on your own devices. We exist because one team can't cover every use case. The path forward is distributed: community-driven skills, shared tooling, open knowledge.
 
 ---
 
 ### What gets built here
 
-- **Plugins & Skills & Packages & Extensions** — standalone features that snap into the OpenClaw runtime
-- **Connectors & Adapters** — bridge AI agents to APIs, databases, and the real world
-- **Tools & Utilities** — CLIs, developer tooling, testing frameworks, workflow automations
+- **Skills** — SKILL.md recipes that teach OpenClaw new capabilities (language-agnostic, publish to [ClawHub](https://clawhub.com))
+- **Extensions** — TypeScript plugins that add channels, providers, and deep integrations via the Plugin SDK
+- **Developer Tools** — Linters, validators, templates, and workflow automations for skill authors
 - **Your project** — no permission needed. Every claw extends the reach.
 
 ### How we build
@@ -27,7 +27,8 @@ OpenClawHQ is an open community building plugins, connectors, and tools for the 
 |----------|-------------|
 | [`plugin-template`](https://github.com/OpenClawHQ/plugin-template) | Skill starter template — fork this and write your SKILL.md |
 | [`cookbook`](https://github.com/OpenClawHQ/cookbook) | Real-world skill recipes: Notion, Docker, Jira, PostgreSQL, git worktrees |
-| [`skill-lint`](https://github.com/OpenClawHQ/skill-lint) | Validate your SKILL.md before publishing to ClawHub |
+| [`skill-lint`](https://github.com/OpenClawHQ/skill-lint) | CLI — validate your SKILL.md before publishing to ClawHub |
+| [`skill-lint-action`](https://github.com/OpenClawHQ/skill-lint-action) | GitHub Action — inline PR annotations for SKILL.md, zero config |
 | [`awesome-openclaw`](https://github.com/OpenClawHQ/awesome-openclaw) | Curated list of skills, extensions, tools, and resources |
 | [`docs`](https://github.com/OpenClawHQ/docs) | Community guides: architecture, skill development, extension development |
 | [Contributing Guide](https://github.com/OpenClawHQ/.github/blob/main/CONTRIBUTING.md) | How to contribute to any repo in the org |
