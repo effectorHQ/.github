@@ -2,7 +2,7 @@
 
 **We build hands for AI that moves first.**
 
-OpenClawHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. Distributed, skill-native, community-driven It's a better architecture.
+OpenClawHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. Distributed, skill-native, community-driven: it's a better architecture.
 
 ---
 
@@ -18,17 +18,19 @@ OpenClawHQ is an open community building plugins, connectors, and tools for the 
 | Principle | What it means |
 |-----------|---------------|
 | **Build First** | Ship rough, iterate in the open. PR over RFC. Demo over deck. |
-| **Ship Loud** | Share early, share often. A typo fix and a core connector carry equal weight. |
+| **Ship Loud** | Share early, share often. A typo fix and a core skill carry equal weight. |
 | **Open by Default** | Code, roadmap, decisions — if it can be open, it is. |
 
 ### Get started
 
 | Resource | Description |
 |----------|-------------|
-| [`awesome-openclaw`](https://github.com/OpenClawHQ/awesome-openclaw) | Curated list of plugins, tools, and resources |
-| [`plugin-template`](https://github.com/OpenClawHQ/plugin-template) | Fork this to start building a new plugin |
+| [`plugin-template`](https://github.com/OpenClawHQ/plugin-template) | Skill starter template — fork this and write your SKILL.md |
+| [`cookbook`](https://github.com/OpenClawHQ/cookbook) | Real-world skill recipes: Notion, Docker, Jira, PostgreSQL, git worktrees |
+| [`skill-lint`](https://github.com/OpenClawHQ/skill-lint) | Validate your SKILL.md before publishing to ClawHub |
+| [`awesome-openclaw`](https://github.com/OpenClawHQ/awesome-openclaw) | Curated list of skills, extensions, tools, and resources |
+| [`docs`](https://github.com/OpenClawHQ/docs) | Community guides: architecture, skill development, extension development |
 | [Contributing Guide](https://github.com/OpenClawHQ/.github/blob/main/CONTRIBUTING.md) | How to contribute to any repo in the org |
-| [Commit Convention](https://github.com/OpenClawHQ/.github/blob/main/COMMIT_CONVENTION.md) | How we write commit messages |
 
 ### Join the build
 
