@@ -8,7 +8,7 @@ OpenClawHQ is an open community building plugins, connectors, and tools for the 
 
 ### What gets built here
 
-- **Plugins & Extensions** — standalone features that snap into the OpenClaw runtime
+- **Plugins & Skills & Packages & Extensions** — standalone features that snap into the OpenClaw runtime
 - **Connectors & Adapters** — bridge AI agents to APIs, databases, and the real world
 - **Tools & Utilities** — CLIs, developer tooling, testing frameworks, workflow automations
 - **Your project** — no permission needed. Every claw extends the reach.
