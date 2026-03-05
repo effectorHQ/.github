@@ -58,6 +58,8 @@ Repos can create the following labels under **Settings → Labels** for categori
 |-------|--------|--------------|
 | `good first issue` | `#7057ff` | Good for newcomers; small scope, clear steps |
 | `help wanted` | `#008672` | Extra help welcome; may need more context |
+| `question` | `#d876e3` | Question or support request (not a task) |
+| `up for grabs` | `#0e8a16` | Unassigned; seeking a contributor |
 
 Apply these when opening or triaging issues so contributors can find them via CONTRIBUTING.md.
 
