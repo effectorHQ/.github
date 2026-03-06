@@ -1,4 +1,4 @@
-# OpenClawHQ Label Conventions
+# effectorHQ Label Conventions
 
 Repos can create the following labels under **Settings → Labels** for categorization and auto-labeling. The Labeler action applies labels to PRs based on changed file paths.
 

@@ -1,6 +1,6 @@
-# Contributing to OpenClawHQ
+# Contributing to effectorHQ
 
-Thanks for showing up. This guide applies to all repositories under the OpenClawHQ organization.
+Thanks for showing up. This guide applies to all repositories under the effectorHQ organization.
 
 ## Principles
 
@@ -64,7 +64,7 @@ docs: update plugin-template README
 
 ## Licensing
 
-Unless stated otherwise, contributions to OpenClawHQ repos are licensed under the same license as the repo you're contributing to. By submitting a PR, you agree that your contribution will be licensed accordingly.
+Unless stated otherwise, contributions to effectorHQ repos are licensed under the same license as the repo you're contributing to. By submitting a PR, you agree that your contribution will be licensed accordingly.
 
 ## Recognition
 

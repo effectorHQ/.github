@@ -1,5 +1,5 @@
 # Reusable: Build / test
-# Call: uses: OpenClawHQ/.github/.github/workflows/build.yml@main
+# Call: uses: effectorHQ/.github/.github/workflows/build.yml@main
 # Optional inputs: node-version, python-version (default: auto-detect)
 name: Build
 

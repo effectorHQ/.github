@@ -2,7 +2,7 @@
 
 ## Our commitment
 
-OpenClawHQ is a community where anyone can contribute, regardless of experience level, identity, or background. We're here to build. That requires an environment where people feel safe to ship rough ideas, ask questions, and challenge assumptions without hostility.
+effectorHQ is a community where anyone can contribute, regardless of experience level, identity, or background. We're here to build. That requires an environment where people feel safe to ship rough ideas, ask questions, and challenge assumptions without hostility.
 
 ## Standards
 
@@ -23,11 +23,11 @@ OpenClawHQ is a community where anyone can contribute, regardless of experience 
 
 ## Scope
 
-This code of conduct applies to all OpenClawHQ spaces: repositories, issues, pull requests, discussions, and any associated communication channels.
+This code of conduct applies to all effectorHQ spaces: repositories, issues, pull requests, discussions, and any associated communication channels.
 
 ## Enforcement
 
-If you experience or witness behavior that violates this code of conduct, report it by emailing **conduct@openclawhq.org** (or by opening a private issue if email is not yet set up). Reports will be reviewed and addressed promptly. All reports are treated confidentially.
+If you experience or witness behavior that violates this code of conduct, report it by emailing **conduct@effectorhq.org** (or by opening a private issue if email is not yet set up). Reports will be reviewed and addressed promptly. All reports are treated confidentially.
 
 Maintainers who do not follow or enforce this code of conduct may face consequences determined by the project leadership.
 

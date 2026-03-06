@@ -2,7 +2,7 @@
 #
 #   jobs:
 #     lint:
-#       uses: OpenClawHQ/.github/.github/workflows/reusable-skill-lint.yml@main
+#       uses: effectorHQ/.github/.github/workflows/reusable-skill-lint.yml@main
 #
 # This means any skill repo gets maintained CI without copying workflow files.
 
@@ -48,7 +48,7 @@ jobs:
 
       - name: Lint SKILL.md
         id: lint
-        uses: OpenClawHQ/skill-lint-action@v1
+        uses: effectorHQ/skill-lint-action@v1
         with:
           path: ${{ inputs.path }}
           fail-on-warnings: ${{ inputs.fail-on-warnings }}

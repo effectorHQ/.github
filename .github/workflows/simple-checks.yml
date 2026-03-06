@@ -1,5 +1,5 @@
 # Reusable: Simple checks (no huge files, no .env, basic structure)
-# Call: uses: OpenClawHQ/.github/.github/workflows/simple-checks.yml@main
+# Call: uses: effectorHQ/.github/.github/workflows/simple-checks.yml@main
 name: Simple checks
 
 on:

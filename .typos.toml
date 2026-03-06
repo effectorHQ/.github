@@ -2,7 +2,7 @@
 [default]
 extend-ignore-re = [
   "OpenClaw",
-  "OpenClawHQ",
+  "effectorHQ",
   "ClawHub",
   "SKILL\\.md",
   "skill-lint",

@@ -1,5 +1,5 @@
 # Reusable: Typo / spell check (code + markdown)
-# Call: uses: OpenClawHQ/.github/.github/workflows/typo.yml@main
+# Call: uses: effectorHQ/.github/.github/workflows/typo.yml@main
 name: Typo
 
 on:

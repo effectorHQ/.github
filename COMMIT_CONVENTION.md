@@ -1,6 +1,6 @@
 # Commit Convention
 
-OpenClawHQ uses a lightweight commit convention based on [Conventional Commits](https://www.conventionalcommits.org/). The goal is readable history, not bureaucracy.
+effectorHQ uses a lightweight commit convention based on [Conventional Commits](https://www.conventionalcommits.org/). The goal is readable history, not bureaucracy.
 
 ## Format
 

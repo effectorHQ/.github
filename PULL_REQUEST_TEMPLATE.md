@@ -19,4 +19,4 @@
 - [ ] Code follows the existing style of the repo
 - [ ] Tests added or updated (if applicable)
 - [ ] Documentation updated (if applicable)
-- [ ] Commit messages follow [Commit Convention](https://github.com/OpenClawHQ/.github/blob/main/COMMIT_CONVENTION.md)
+- [ ] Commit messages follow [Commit Convention](https://github.com/effectorHQ/.github/blob/main/COMMIT_CONVENTION.md)

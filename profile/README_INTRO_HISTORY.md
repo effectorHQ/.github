@@ -8,7 +8,7 @@ This file records how the **intro paragraph** (the block under the title and tag
 
 **Commit:** `c97b45a` — docs(profile): restore local copy (skills, extensions, ClawHub, Plugin SDK)
 
-> OpenClawHQ is an open community building skills, extensions, and developer tools for [OpenClaw](https://github.com/openclaw/openclaw) — the personal AI assistant you run on your own devices. We exist because one team can't cover every use case. The path forward is distributed: community-driven skills, shared tooling, open knowledge.
+> effectorHQ is an open community building skills, extensions, and developer tools for [OpenClaw](https://github.com/openclaw/openclaw) — the personal AI assistant you run on your own devices. We exist because one team can't cover every use case. The path forward is distributed: community-driven skills, shared tooling, open knowledge.
 
 ---
 
@@ -16,7 +16,7 @@ This file records how the **intro paragraph** (the block under the title and tag
 
 **Commit:** `d8830a7` — feat: init org profile and community defaults
 
-> OpenClawHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. It's a better architecture: distributed, plugin-native, community-driven.
+> effectorHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. It's a better architecture: distributed, plugin-native, community-driven.
 
 ---
 
@@ -24,7 +24,7 @@ This file records how the **intro paragraph** (the block under the title and tag
 
 **Commit:** `7b1dbda` — Update README.md
 
-> OpenClawHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. Distributed, skill-native, community-driven It's a better architecture.
+> effectorHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. Distributed, skill-native, community-driven It's a better architecture.
 
 (Note: missing colon between "community-driven" and "It's"; fixed in the next version.)
 
@@ -36,7 +36,7 @@ This file records how the **intro paragraph** (the block under the title and tag
 
 Intro paragraph unchanged from version 2:
 
-> OpenClawHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. Distributed, skill-native, community-driven It's a better architecture.
+> effectorHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. Distributed, skill-native, community-driven It's a better architecture.
 
 (Only the intro is listed here; that commit also changed the "What gets built here" bullet to Plugins & **Skills & Packages** & Extensions.)
 
@@ -46,7 +46,7 @@ Intro paragraph unchanged from version 2:
 
 **Commit:** `81fd390` — docs(profile): resolve merge conflict, keep org copy
 
-> OpenClawHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. Distributed, skill-native, community-driven**:** it's a better architecture.
+> effectorHQ is an open community building plugins, connectors, and tools for the proactive AI ecosystem. We exist because one team — no matter how strong — can't cover every use case. With 500+ PRs flowing through OpenClaw daily, the path forward isn't more people. Distributed, skill-native, community-driven**:** it's a better architecture.
 
 (Only change: added the missing colon before "it's".)
 

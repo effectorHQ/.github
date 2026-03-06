@@ -1,5 +1,5 @@
 # Reusable: Security Analysis
-# Call from repo: uses: OpenClawHQ/.github/.github/workflows/security-analysis.yml@main
+# Call from repo: uses: effectorHQ/.github/.github/workflows/security-analysis.yml@main
 name: Security Analysis
 
 on:
