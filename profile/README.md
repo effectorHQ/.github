@@ -17,8 +17,10 @@
 effectorHQ is an open community building effectors — skills, extensions, workflows, and developer tools — for Harness of Proactive AI . 
 </p>
 
-Currently powering the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. We exist because one team can't cover every use case. 
-Distributed, effector-native, community-driven is a better architecture.
+Currently powering the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem.
+</p>
+
+We exist because one team can't cover every use case. Distributed, effector-native, community-driven is a better architecture.
 
 ---
 
