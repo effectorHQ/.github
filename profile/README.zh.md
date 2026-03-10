@@ -1,58 +1,88 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/effectorHQ/brand-kit/main/logos/wordmark-dark.svg" alt="effectorHQ" height="36">
+  <img src="https://raw.githubusercontent.com/effectorHQ/brand-kit/main/logos/wordmark-dark.svg?v=2" alt="effectorHQ" height="72">
 </p>
 
-<p align="center"><strong>我们为率先行动的 AI 打造双手。</strong></p>
+<p align="center"><strong>为 AI 打造双手，先做再说。</strong></p>
 
 <p align="center">
   <a href="https://github.com/effectorHQ/.github/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="欢迎 PR"></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
   <a href="https://github.com/effectorHQ/.github/blob/main/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="行为准则"></a>
-  <a href="https://github.com/effectorHQ/skill-lint"><img src="https://img.shields.io/badge/validated%20by-skill--lint-E03E3E" alt="skill-lint"></a>
   <a href="./README.md"><img src="https://img.shields.io/badge/docs-English-blue.svg" alt="English"></a>
 </p>
 
 ---
 
-effectorHQ 是一个开放社区，专注于构建 effectors — skills、extensions、workflows 和开发者工具 — 服务于主动式 AI。当前驱动 [OpenClaw](https://github.com/openclaw/openclaw) 生态系统。我们存在的原因很简单：一个团队无法覆盖所有使用场景。分布式、effector 原生、社区驱动，是更好的架构。
+effectorHQ 是一个开放工作室，构建下一代 AI agent 能力基础设施。每个项目都是独立的产品——解决一个真实问题，有研究支撑，能独立被引用和采用。所有产品共同构成一个愿景：**为 AI 打造有类型、可组合、可验证的双手。**
+
+我们不做大脑（那是 LLM 的事）。我们不做身体（那是 runtime 的事——[OpenClaw](https://github.com/openclaw/openclaw)、Claude Agent SDK、以及未来的一切）。我们做手——并且确保每一只手都比之前更安全、更可组合、更强大。
 
 ---
 
-### 这里构建什么
+### Effector 类型系统
 
-- **Skills** — SKILL.md 配方，让 OpenClaw 获得新能力（语言无关，发布至 [ClawHub](https://clawhub.com)）
-- **Extensions** — TypeScript 插件，通过 Plugin SDK 添加 channels、providers 和深度集成
-- **Workflows** — 兼容 Lobster 的 pipeline，将 skills 串联成可组合、可恢复的自动化流程
-- **Workspace Templates** — 开箱即用的 SOUL.md、AGENTS.md、TOOLS.md 配置，适配常见 agent 角色
-- **开发者工具** — Linters、验证器、模板和 CI 自动化，服务 skill 和 extension 作者
-- **你的项目** — 无需申请权限。每一个 effector 都能延伸触达。
+核心论点：AI agent 能力需要类型系统。今天你把两个 skill 串起来然后祈祷它能跑。明天你在第一个 token 花出去之前就完成类型检查。这就是我们在构建的范式。
+
+| 项目 | 定位 |
+|------|------|
+| [`effector-spec`](https://github.com/effectorHQ/effector-spec) | **Effector 规范** — 类型语言、组合代数、发现协议。旗舰项目。 |
+| [`effector-types`](https://github.com/effectorHQ/effector-types) | **标准能力类型库** — AI agent 工具的 `lib.d.ts`。输入类型、输出类型、上下文类型。 |
+| [`effector-compose`](https://github.com/effectorHQ/effector-compose) | **组合引擎** — 构建 agent 管道、类型检查、输出到任意 runtime。 |
+| [`effector-graph`](https://github.com/effectorHQ/effector-graph) | **能力图谱可视化** — 类型化能力网络的交互式浏览器。 |
+| [`effector-audit`](https://github.com/effectorHQ/effector-audit) | **安全审计 + 签名** — 基于 Sigstore 的签名、静态分析、供应链验证。 |
+
+### 构建 & 发布
+
+| 项目 | 用途 |
+|------|------|
+| [`create-effector`](https://github.com/effectorHQ/create-effector) | `npx create-effector` — 秒级脚手架，支持所有 Effector 类型 |
+| [`plugin-template`](https://github.com/effectorHQ/plugin-template) | Skill 启动模板 — fork 然后写你的 SKILL.md |
+| [`cookbook`](https://github.com/effectorHQ/cookbook) | 实战食谱：Notion、Docker、Jira、PostgreSQL、git worktrees |
+| [`linear-skill`](https://github.com/effectorHQ/linear-skill) | 参考实现 — 生产就绪，零 lint 错误 |
+
+### 质量 & 工具链
+
+| 项目 | 用途 |
+|------|------|
+| [`skill-lint`](https://github.com/effectorHQ/skill-lint) | CLI — 发布前验证你的 SKILL.md |
+| [`skill-lint-action`](https://github.com/effectorHQ/skill-lint-action) | GitHub Action — PR 内联标注，零配置 |
+| [`openclaw-mcp`](https://github.com/effectorHQ/openclaw-mcp) | SKILL.md → MCP 桥接 — 让 skill 在 Claude、Cursor、Windsurf 中工作 |
+
+### 探索 & 学习
+
+| 项目 | 用途 |
+|------|------|
+| [`awesome-openclaw`](https://github.com/effectorHQ/awesome-openclaw) | 精选列表：技能、扩展、工具、资源 |
+| [`workspace-templates`](https://github.com/effectorHQ/workspace-templates) | Agent 人格套件（DevOps、Code Reviewer、Security Auditor 等） |
+| [`lobster-recipes`](https://github.com/effectorHQ/lobster-recipes) | 工作流管道：部署通知、每日站会、PR 审查分流 |
+| [`docs`](https://github.com/effectorHQ/docs) | 社区指南：架构、skill 开发、扩展开发 |
+
+### 治理
+
+| 文档 | 用途 |
+|------|------|
+| [`manifesto`](https://github.com/effectorHQ/manifesto) | 创始论纲 — 为什么类型化能力很重要 |
+| [`rfcs`](https://github.com/effectorHQ/rfcs) | RFC 流程 — 规范变更和新产品提案 |
+| [贡献指南](https://github.com/effectorHQ/.github/blob/main/CONTRIBUTING.md) | 如何为任意项目做贡献 |
+
+---
 
 ### 我们如何构建
 
-| 原则 | 含义 |
+| 原则 | 实践 |
 |------|------|
-| **Build First（先构建）** | 粗糙发布，公开迭代。PR 优先于 RFC，Demo 优先于 Deck。 |
-| **Ship Loud（响亮发布）** | 早分享，多分享。修一个 typo 和写一个核心 skill，分量相同。 |
-| **Open by Default（默认开放）** | 代码、路线图、决策——能开放的都开放。 |
-
-### 快速开始
-
-| 资源 | 说明 |
-|------|------|
-| [`plugin-template`](https://github.com/effectorHQ/plugin-template) | Skill 起始模板——fork 后写你的 SKILL.md |
-| [`cookbook`](https://github.com/effectorHQ/cookbook) | 实战 skill 配方：Notion、Docker、Jira、PostgreSQL、git worktrees |
-| [`linear-skill`](https://github.com/effectorHQ/linear-skill) | 参考实现——生产级 skill，lint 零错误零警告 |
-| [`skill-lint`](https://github.com/effectorHQ/skill-lint) | CLI——发布至 ClawHub 前验证你的 SKILL.md |
-| [`skill-lint-action`](https://github.com/effectorHQ/skill-lint-action) | GitHub Action——SKILL.md 的 PR 行内标注，零配置 |
-| [`awesome-openclaw`](https://github.com/effectorHQ/awesome-openclaw) | 精选 skills、extensions、工具和资源列表 |
-| [`docs`](https://github.com/effectorHQ/docs) | 社区文档：架构、skill 开发、extension 开发 |
-| [贡献指南](https://github.com/effectorHQ/.github/blob/main/CONTRIBUTING.md) | 如何向 org 内任何 repo 贡献 |
-
-### 加入构建
-
-这是一个社区项目，没有门槛。浏览 repo、开一个 PR，或者开启一个新项目。
-
-如有问题，在对应 repo 开 issue，或在 [Discussions](https://github.com/orgs/effectorHQ/discussions) 发帖。
+| **先做再说** | 先出能跑的代码，再写提案。一个跑起来的原型胜过一份完美的规范。 |
+| **大声发布** | 每次 merge、每个 release note、每位贡献者都有信号。发布应该像赢了一样。 |
+| **默认开放** | 代码、路线图、决策、失败的实验——能开放的全部开放。 |
 
 ---
 
-<sub>每一个 effector 都能延伸触达。&copy; 2026 effectorHQ Contributors</sub>
+### 加入构建
+
+这是社区项目，没有门槛。浏览 repo、开 PR、或者启动新的东西。
+
+有问题请在相关 repo 开 issue，或在 [Discussion](https://github.com/orgs/effectorHQ/discussions) 中发起讨论。
+
+---
+
+<sub>每一个 effector 都在扩展边界。© 2026 effectorHQ Contributors</sub>
