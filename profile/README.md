@@ -16,7 +16,7 @@ effectorHQ (*prev. OpenClawHQ*) is an open studio building the next generation o
 Currently powering the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem.
 We exist because one team can't cover every use case. Distributed, effector-native, community-driven is a better architecture.
 
-We don't build the brain (that's the LLM). We don't build the body (that's the runtime — [OpenClaw](https://github.com/openclaw/openclaw), Claude Agent SDK, and whatever comes next). We build the hands — and we make sure every hand is safer, more composable, and more powerful than what existed before.
+We don't build the brain (that's the LLM). We don't build the body (that's the runtime — [OpenClaw](https://github.com/openclaw/openclaw), [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python), and whatever comes next). We build the hands — and we make sure every hand is safer, more composable, and more powerful than what existed before.
 
 ---
 
