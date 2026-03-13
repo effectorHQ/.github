@@ -48,8 +48,7 @@ The core thesis: AI agent capabilities need types. Today you chain two skills an
 | [`effector-types`](https://github.com/effectorHQ/effector-types) | **Standard capability types** — the `lib.d.ts` for agent tools, grounded in 13K+ skills | v0.2.0 |
 | [`clawhub-analysis`](https://github.com/effectorHQ/clawhub-analysis) | **Empirical data** — 13,729 skills analyzed, type distributions, failure rates | Data + notebook |
 
-### Quality
-`what makes capabilities reliable`
+### Quality — `what makes capabilities reliable`
 
 | Project | What it does | Status |
 |---------|-------------|--------|
@@ -58,8 +57,7 @@ The core thesis: AI agent capabilities need types. Today you chain two skills an
 | [`effector-audit`](https://github.com/effectorHQ/effector-audit) | Security audit — Sigstore signing, permission drift detection | v0.1.0 |
 | [`skill-lint-action`](https://github.com/effectorHQ/skill-lint-action) | GitHub Action — inline PR annotations, zero config | Working |
 
-### Build & Ship
-`get started in minutes`
+### Build & Ship — `get started in minutes`
 
 | Project | What it does | Status |
 |---------|-------------|--------|
@@ -68,8 +66,7 @@ The core thesis: AI agent capabilities need types. Today you chain two skills an
 | [`plugin-template`](https://github.com/effectorHQ/plugin-template) | Skill starter template — fork and write your SKILL.md | Working |
 | [`cookbook`](https://github.com/effectorHQ/cookbook) | Real-world skill recipes: Docker, Jira, PostgreSQL, git worktrees | Examples |
 
-### Compose & Bridge
-`connecting capabilities`
+### Compose & Bridge — `connecting capabilities`
 
 | Project | What it does | Status |
 |---------|-------------|--------|
