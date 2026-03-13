@@ -25,9 +25,10 @@ graph LR
 
   Brain["Brain / LLMs"]:::brain --> Body["Body / Runtimes"]:::body
   Body --> Hands["Hands / Effectors"]:::hands
+  Hands --> EffNode["Effector = the smallest capability unit an agent can discover, inspect, run, compose, and carry across runtimes."]:::hands
 ```
 
-*Effector = the smallest capability unit an agent can discover, inspect, run, compose, and carry across runtimes.*
+**Effector** = the smallest capability unit an agent can discover, inspect, run, compose, and carry across runtimes.
 
 ---
 
