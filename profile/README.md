@@ -28,7 +28,7 @@ graph LR
 
 _Brain = models, Body = runtimes, Hands = typed effectors sitting on top._
 
-Currently powering the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. That's where we started — but the Effector layer is designed to sit above any runtime that can speak the types.
+Designed for a larger capability layer, we exist because one team can't cover every use case. Distributed, effector-native, community-driven is a better architecture.
 
 ---
 
