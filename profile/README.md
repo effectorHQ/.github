@@ -35,7 +35,7 @@ Our [analysis of 13,729 ClawHub skills](https://github.com/effectorHQ/clawhub-an
 
 The core thesis: AI agent capabilities need types. Today you chain two skills and pray they work. Tomorrow you type-check the composition before a single token is spent. 
 
-This is the paradigm we're building. *Effector* = the smallest capability unit an agent can discover, inspect, run, compose, and carry across runtimes.
+This is the paradigm we're building. **Effector** = the smallest capability unit an agent can discover, inspect, run, compose, and carry across runtimes.
 
 | Project | What it is | Status |
 |---------|-----------|--------|
