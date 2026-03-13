@@ -80,7 +80,7 @@ The core thesis: AI agent capabilities need types. Today you chain two skills an
 | [`lobster-recipes`](https://github.com/effectorHQ/lobster-recipes) | Workflow pipelines: deploy-and-notify, daily-standup, PR-review-triage |
 | [`docs`](https://github.com/effectorHQ/docs) | Community guides: architecture, skill development, extension development |
 
-### Prev.
+### Prev. (for 🦞)
 
 | Project | What it does |
 |---------|-------------|
