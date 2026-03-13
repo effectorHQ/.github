@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/effectorHQ/brand-kit/main/logos/wordmark-dark.svg?v=2" alt="effectorHQ" height="72">
 </p>
 
-<p align="center"><strong>We build hands for AI.</strong></p>
+<p align="center"><strong>We build hands for AI that moves first.</strong></p>
 
 <p align="center">
   <a href="https://github.com/effectorHQ/.github/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
@@ -10,20 +10,19 @@
   <a href="https://github.com/effectorHQ/.github/blob/main/profile/README.zh.md"><img src="https://img.shields.io/badge/文档-中文-red.svg" alt="中文文档"></a>
 </p>
 
-```
-Brain  →  Body   →  Hands
-LLMs      Runtimes   Effectors
-          (OpenClaw,  (typed, composable, verifiable
-           Claude,     capability units)
-           etc.)
-```
-
 effectorHQ builds the capability layer for AI agents. We don't build the brain (that's the LLM). We don't build the body (that's the runtime). We build the hands — and we make sure every hand is typed, composable, and verifiable.
 
-Starting with [OpenClaw](https://github.com/openclaw/openclaw). Designed for a larger capability layer.
-We exist because one team can't cover every use case. Distributed, effector-native, community-driven is a better architecture.
+Starting with [OpenClaw](https://github.com/openclaw/openclaw). Our [analysis of 13,729 ClawHub skills](https://github.com/effectorHQ/clawhub-analysis) found a **67% agent failure rate** — driven by untyped interfaces, missing prerequisites, and permission mismatches. We're designed for a larger capability layer. We exist because one team can't cover every use case. Distributed, effector-native, community-driven is a better architecture.
 
-Currently powering the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. Our [analysis of 13,729 ClawHub skills](https://github.com/effectorHQ/clawhub-analysis) found a **67% agent failure rate** — driven by untyped interfaces, missing prerequisites, and permission mismatches. That's the problem we're solving.
+We don't build the brain (that's the LLM). We don't build the body (that's the runtime — [OpenClaw](https://github.com/openclaw/openclaw), [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python), and whatever comes next). We build the hands — and we make sure every hand is safer, more composable, and more powerful than what existed before.
+
+```mermaid
+graph LR
+  Brain[Brain<br/>LLMs] --> Body[Body<br/>Runtimes (OpenClaw, Claude, etc.)]
+  Body --> Hands[Hands<br/>Effectors (typed, composable, verifiable capability units)]
+```
+
+Currently powering the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. That's where we started — but the Effector layer is designed to sit above any runtime that can speak the types.
 
 ---
 
