@@ -20,6 +20,9 @@ LLMs      Runtimes   Effectors
 
 effectorHQ builds the capability layer for AI agents. We don't build the brain (that's the LLM). We don't build the body (that's the runtime). We build the hands — and we make sure every hand is typed, composable, and verifiable.
 
+Starting with [OpenClaw](https://github.com/openclaw/openclaw). Designed for a larger capability layer.
+We exist because one team can't cover every use case. Distributed, effector-native, community-driven is a better architecture.
+
 Currently powering the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. Our [analysis of 13,729 ClawHub skills](https://github.com/effectorHQ/clawhub-analysis) found a **67% agent failure rate** — driven by untyped interfaces, missing prerequisites, and permission mismatches. That's the problem we're solving.
 
 ---
