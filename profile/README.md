@@ -50,14 +50,14 @@ The core thesis: AI agent capabilities need types. Today you chain two skills an
 | [`skill-lint`](https://github.com/effectorHQ/skill-lint) | CLI — validate SKILL.md structure before publishing | Working (v0.2.0) |
 | [`skill-eval`](https://github.com/effectorHQ/skill-eval) | **Evaluation framework** — measure whether skills actually work | v0.1.0 (static) |
 | [`effector-audit`](https://github.com/effectorHQ/effector-audit) | Security audit — Sigstore signing, permission drift detection | v0.1.0 |
-| [`skill-lint-action`](https://github.com/effectorHQ/skill-lint-action) | GitHub Action — inline PR annotations, zero config | Working |
+| [`skill-lint-action`](https://github.com/effectorHQ/skill-lint-action) | GitHub Action — inline PR annotations, zero config | Working (v1.0.0) |
 
 ### Build & Ship
 `get started in minutes`
 
 | Project | What it does | Status |
 |---------|-------------|--------|
-| [`create-effector`](https://github.com/effectorHQ/create-effector) | `npx create-effector` — scaffold any Effector type | Working |
+| [`create-effector`](https://github.com/effectorHQ/create-effector) | `npx create-effector` — scaffold any Effector type | Working (v0.1.0) |
 | [`linear-skill`](https://github.com/effectorHQ/linear-skill) | **Reference implementation** — production-ready skill, Grade A eval, zero lint errors | v1.0.0 |
 | [`plugin-template`](https://github.com/effectorHQ/plugin-template) | Skill starter template — fork and write your SKILL.md | Working |
 | [`cookbook`](https://github.com/effectorHQ/cookbook) | Real-world skill recipes: Docker, Jira, PostgreSQL, git worktrees | Examples |
@@ -67,8 +67,8 @@ The core thesis: AI agent capabilities need types. Today you chain two skills an
 
 | Project | What it does | Status |
 |---------|-------------|--------|
-| [`effector-compose`](https://github.com/effectorHQ/effector-compose) | Build agent pipelines, type-check them, emit to any runtime | Early |
-| [`effector-graph`](https://github.com/effectorHQ/effector-graph) | Capability graph visualization and path-finding | Early |
+| [`effector-compose`](https://github.com/effectorHQ/effector-compose) | Build agent pipelines, type-check them, emit to any runtime | Working (v0.1.0) |
+| [`effector-graph`](https://github.com/effectorHQ/effector-graph) | Capability graph visualization and path-finding | Working (v0.1.0) |
 | [`openclaw-mcp`](https://github.com/effectorHQ/openclaw-mcp) | SKILL.md → MCP bridge — make skills work in Claude, Cursor, Windsurf | v0.1.0 |
 
 ### Explore & Learn
