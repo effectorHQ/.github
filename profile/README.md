@@ -23,8 +23,8 @@ graph LR
   classDef body fill:#2D2D2D,color:#F5F0EB,stroke:#1A1A1A;
   classDef hands fill:#E03E3E,color:#F5F0EB,stroke:#E03E3E;
 
-  Brain[Brain<br/>LLMs]:::brain --> Body[Body<br/>Runtimes (OpenClaw, Claude, etc.)]:::body
-  Body --> Hands[Hands<br/>Effectors (typed, composable, verifiable capability units)]:::hands
+  Brain["Brain / LLMs"]:::brain --> Body["Body / Runtimes (OpenClaw, Claude, etc.)"]:::body
+  Body --> Hands["Hands / Effectors (typed, composable, verifiable capability units)"]:::hands
 ```
 
 _Brain = models, Body = runtimes, Hands = typed effectors sitting on top._
