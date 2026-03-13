@@ -27,6 +27,8 @@ graph LR
   Body --> Hands["Hands / Effectors"]:::hands
 ```
 
+*Effector = the smallest capability unit an agent can discover, inspect, run, compose, and carry across runtimes.*
+
 ---
 
 ### The Effector Type System
